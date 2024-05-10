@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p className='bg-my text-sec px-4 rounded'>
           Hello kolja
         </p>
         <a
