@@ -1,5 +1,5 @@
 export function array<T>(lenght: number, fillBy?: T | ((index:number) => T)): T[] {
-    return fillBy
+    return fillBy !== undefined
         ? array(lenght).map((_, index) => isSingleValue(fillBy) ? fillBy : fillBy(index))
         : [... new Array(lenght)]
 } 
